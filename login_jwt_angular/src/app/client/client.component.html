@@ -1,0 +1,18 @@
+<h3>Lista de Cliente Cadastrados</h3>
+
+<div style="float:right">
+    <button *ngIf="loggedin" class="button" (click)="logout()">logout</button>
+</div>
+
+<div class="table">
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+        </thead>
+        <tbody *ngFor="let client of clientsdata">
+            <td>{{client.id}}</td>
+            <td>{{client.nome}}</td>
+        </tbody>
+    </table>
+</div>

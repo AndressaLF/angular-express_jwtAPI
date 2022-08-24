@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
     password: new FormControl(),
   })
 
-    
   
   constructor(private service: UsuarioService) { }
   
@@ -34,7 +33,7 @@ export class LoginComponent implements OnInit {
         return false
 
       }
-        console.log(response)
+        //console.log(response)
         localStorage.setItem('jwttoken', response.token)        
         window.location.href = "/client"
            

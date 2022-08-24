@@ -6,6 +6,7 @@ import { ClientComponent } from './client/client.component';
 const routes: Routes = [
   {path:"client", component:ClientComponent},
   {path:"login", component:LoginComponent},
+  {path:"**", component:LoginComponent},
 ];
 
 @NgModule({
